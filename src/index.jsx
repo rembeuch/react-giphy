@@ -12,7 +12,6 @@ class Hello extends Component {
       clicked: false
     };
   }
-
   handleClick = () => {
     this.setState({
       clicked: !this.state.clicked
@@ -21,10 +20,10 @@ class Hello extends Component {
 
   render(){
     return(
-        <div className={this.state.clicked ? 'clicked' : null }
-        onClick={this.handleClick}>
-          Hello {this.props.name}!
-        </div>
+      <div className={this.state.clicked ? 'clicked' : null }
+      onClick={this.handleClick}>
+      Hello {this.props.name}!
+      </div>
       )
   }
 }
